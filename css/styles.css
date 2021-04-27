@@ -213,7 +213,7 @@ a{
 }
 
 .bg-lc{
-  background-image: url('images/mowed-grass.jpg');
+  background-image: url('./images/mowed-grass.jpg');
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -244,7 +244,7 @@ a{
 }
 
 .bg-ar{
-  background-image: url('images/aeration.jpg');
+  background-image: url('../images/aeration.jpg');
   width: 100%;
   height: 100%;
   background-size: cover;
