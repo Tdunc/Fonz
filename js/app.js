@@ -18,3 +18,13 @@ for(let i=0;i<tabPanes.length;i++){
 }
 
 
+var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        
+        if (window.pageYOffset > 90) {
+          nav.classList.add('navbar-light', 'shadow');
+        } else {
+          nav.classList.remove('navbar-light', 'shadow');
+        }
+      });

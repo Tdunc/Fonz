@@ -13,38 +13,48 @@
 </head>
 <body>
   <!-- BEGIN NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 bg-body rounded">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fonz Lawns</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-lg p-md-3 navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" class="logo-size">
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#locations">Locations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Contact Us</a>
             </li>
             
             
           </ul>
-          
-            
-            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-              Free Quote
-            </a>
-          
+        
+        
         </div>
       </div>
     </nav>
+    
+   
   <!-- END NAV -->
   
     <!-- Image Carousel -->
@@ -52,16 +62,17 @@
       <div class="carousel-inner">
         <!-- Carousel Content -->
         <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" alt="" class="w-100">
+          <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" alt="" class="w-100 img-fluid">
           <div class="carousel-caption">
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-8 bg-custom d-none d-md-block py-3 px-0">
+                <div class="col-8 bg-custom d-block d-md-block py-3 px-0">
                   <h1>Heading Text</h1>
                   <div class="border-top border-primary w-50 mx-auto my-3"></div>
                   <h3 class="pb-3">More Text</h3>
-                  <a href="#" class="btn btn-danger btn-lg mr-2">Free Quote</a>
-                  <a href="#" class="btn btn-primary btn-lg ml-2">Free Quote</a>
+                  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    Free Quote
+                  </a>
                 </div>
               </div>
             </div>
@@ -73,9 +84,11 @@
           <div class="carousel-caption">
             <div class="container">
               <div class="row justify-content-end text-left">
-                <div class="col-5 bg-custom d-none d-md-block py-3 pl-3">
+                <div class="col-5 bg-custom d-block d-md-block py-3 pl-3">
                   <p class="lead pb-3">Joe mow good, buy service now.</p>
-                  <a href="#" class="btn btn-primary btn-lg">Free Quote</a>
+                  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    Free Quote
+                  </a>
                 </div>
               </div>
             </div>
@@ -83,16 +96,18 @@
         </div>
 
         <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1547933164-b99c95631991?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" class="w-100">
+          <img src="https://images.unsplash.com/photo-1547933164-b99c95631991?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" class="w-100 img-fluid">
           <div class="carousel-caption">
             <div class="container">
               <div class="row justify-content-start text-right">
-                <div class="col-6 bg-custom d-none d-md-block py-3 pr-3">
+                <div class="col-6 bg-custom d-block d-md-block py-3 pr-3">
                   <h3 class="pb-3">Amazing services</h3>
                   <p class="lead pb-3">
                     so sick services joe good.
                   </p>
-                  <a href="#" class="btn btn-primary btn-lg">Free Quote</a>
+                  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    Free Quote
+                  </a>
                 </div>
               </div>
             </div>
@@ -113,7 +128,7 @@
     </div>
 
     <!-- Start Cities Service-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="locations">
       <div class="row bg-city">
         <div class="col-12 text-center mt-5">
           <h1 class="pt-4 pb-5">CITIES WE SERVICE</h1>
@@ -137,10 +152,10 @@
     </div>
      <!-- End Cities service -->
 
-    <!-- column section -->
+    <!-- Service Types -->
     
      
-      <div class="tabs">
+      <div class="tabs" id="services">
         <div class="tab-header">
         <div class="active-tab">
           <i class="fa fa-code"></i> Lawn Care
@@ -196,9 +211,10 @@
       </div>
     </div>
   </div>
+<!-- End Service Types -->
 
 <!-- Start Two Column Seciton -->
-<div class="container my-5">
+<div class="container my-5" id="about">
   <div class="row py-4">
 
     <div class="col-lg-4 mb-4 my-lg-auto">
@@ -206,7 +222,7 @@
       <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos unde dolorum ad non dicta. Quam amet quisquam incidunt maiores pariatur.</p>
       <a href="#" target="_blank" class="btn btn-outline-dark btn-lg">Button</a>
     </div>
-    <div class="col-lg-8"><img src="https://images.unsplash.com/photo-1611528196086-ccbf0260584b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" class="w-50"></div>
+    <div class="col-lg-8"><img src="/images/profile-pic.jpg" alt="" class="w-50"></div>
   </div>
 </div>
 <!-- End Two Column Section -->
@@ -220,7 +236,9 @@
         </div>
         
         <div class="col-md-5 col-lg-4 col-xl-3">
-          <a href="#" class="btn btn-primary btn-lg">Contact us</a>
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Contact Us
+          </a>
         </div>
       </div>
     </div>
@@ -228,11 +246,13 @@
 <!-- END JUMBO -->
 
 <footer>
-  <div class="container row text-dark text-center py-4 justify-content-center">
+  <div class="container-fluid row text-dark text-center py-4 justify-content-center">
 
     <div class="col-sm-10 col-md-8 col-lg-6">
-      <img src="#" alt="">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse nihil commodi asperiores iste adipisci atque magnam ut voluptatibus, nostrum reprehenderit modi mollitia, optio veritatis? Velit earum quo odit corrupti!</p>
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png">
+      </a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
       <ul class="social pt-3">
         <li><a href="https://www.facebook.com/fonzlawns/" target="_blank" ><i class="fab fa-facebook"></i></a></li>
@@ -245,7 +265,7 @@
 </footer>
 
 <div class="socket text-dark text-center py-3">
-  <p>&copy; <a href="#" target="_blank" >Joeswebsite.com</a></p>
+  <p>&copy; <a href="#" target="_blank" class="text-dark">Fonzlawns.com</a></p>
 </div>
 <!-- QUOTE BUTTON OFF CANVAS -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -257,22 +277,23 @@
     <div class="pb-3">
       Please fill out this information for a free quote!
     </div>
-    <form class="row g-3">
+    <form  action="9aa17f96c5cb5d1ea5d0ac06f52af945"class="row g-3" method="POST">
+      <input type="hidden" name="_subject" value="User Requesting quote from website.">
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">First Name</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="John">
+        <label for="Fname" class="form-label">First Name</label>
+        <input name="_firstName" type="Fname" class="form-control" id="_Fname" placeholder="John" required>
       </div>
       <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Last Name</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Doe">
+        <label for="Lname" class="form-label">Last Name</label>
+        <input name="_lastName"type="Lname" class="form-control" id="_Lname" placeholder="Doe" required>
       </div>
       <div class="col-12">
         <label for="inputAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <input name="_address" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
       </div>
       <div class="col-md-6">
-        <label for="inputState" class="form-label">Contact</label>
-        <select id="inputState" class="form-select">
+        <label for="inputSelection" class="form-label">Contact</label>
+        <select id="inputSelection" class="form-select" required name="_contact">
           <option selected>Call or Text</option>
           <option>Call</option>
           <option>Text</option>
@@ -280,19 +301,19 @@
         </select>
       </div>
       <div class="col-6">
-        <label for="inputAddress" class="form-label">Phone Number#</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1-800-855-5555">
+        <label for="phoneNumber" class="form-label">Phone Number#</label>
+        <input name="_phoneNumber" type="text" class="form-control" id="phoneNumber" placeholder="1-800-855-5555" required>
       </div>
       
       
       
       <div class="col-md-6">
         <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity">
+        <input name="_city"type="text" class="form-control" id="inputCity" required>
       </div>
       <div class="col-md-4">
         <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
+        <select name="_state" id="inputState" class="form-select" required>
           <option selected>Choose...</option>
           <option>UT</option>
         </select>
@@ -300,42 +321,42 @@
 
       <div class="col-md-3">
         <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
+        <input name="_zip" type="text" class="form-control" id="inputZip" required>
       </div>
       <div class="col-12">
-        <div class="form-check" required>
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
+        <div class="form-check">
+          <input name="_typeOfQuote" class="form-check-input" type="checkbox" id="lawnCare">
+          <label class="form-check-label" for="lawnCare">
             Lawn care
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
+          <input name="_typeOfQuote" class="form-check-input" type="checkbox" id="aeration">
+          <label class="form-check-label" for="aeration">
             Aeration
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
+          <input name="_typeOfQuote" class="form-check-input" type="checkbox" id="snowRemoval">
+          <label class="form-check-label" for="snowRemoval">
             Snow Removal
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
+          <input name="_typeOfQuote" class="form-check-input" type="checkbox" id="irrigation">
+          <label class="form-check-label" for="irrigation">
             Irrigation
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
+          <input name="_typeOfQuote" class="form-check-input" type="checkbox" id="other">
+          <label class="form-check-label" for="other">
             Other
           </label>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type here to add more info.."></textarea>
+          <textarea name="_text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type here to add more info.."></textarea>
         </div>
       </div>
       <div class="col-12">
